@@ -22,11 +22,10 @@ function cleanup() {
  * Creates a discord channel message with a given article
  */
 function buildMessageFromArticle({ title, postURL, articleURL }: Article) {
-	return `**Title**: ${title}
-**Original post**: ${postURL}
-**Article link**: ${articleURL}
-_ _
-_ _`;
+	return `>>> ## ${title}
+			### Original post: [Link detail](${postURL}) 
+			### Article link: [Link detail](${articleURL})
+			`;
 }
 
 /**
